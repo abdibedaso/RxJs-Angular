@@ -16,6 +16,7 @@ export class AppComponent {
     numbers$
     .pipe(
       take(5),
+      map(x => x * 10),
     ).subscribe(x => console.log(x));
   
   }
