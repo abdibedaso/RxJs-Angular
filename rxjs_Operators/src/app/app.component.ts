@@ -17,6 +17,7 @@ export class AppComponent {
     .pipe(
       take(5),
       map(x => x * 10),
+      filter(x => x > 20)
     ).subscribe(x => console.log(x));
   
   }
